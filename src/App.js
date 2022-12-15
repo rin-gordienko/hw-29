@@ -1,9 +1,13 @@
-import Counter from './components/Counter';
-import './App.css';
+import { ChakraProvider } from "@chakra-ui/react";
+import Counter from "./components/Counter";
+
+import "./App.css";
 
 function App() {
   return (
-    <Counter />
+    <ChakraProvider>
+      <Counter />
+    </ChakraProvider>
   );
 }
 
