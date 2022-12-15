@@ -10,7 +10,7 @@ import { Box } from "@chakra-ui/react";
 const initialValue = 1;
 
 const Counter = () => {
-  const { count, increment, decrement, setCount } = useCounter(1);
+  const { count, increment, decrement, setCount } = useCounter(initialValue);
 
   const handleChange = ({ target: { value } }) => {
     if (value < initialValue || typeof value === "string") {
