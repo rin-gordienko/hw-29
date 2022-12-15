@@ -13,7 +13,7 @@ const Counter = () => {
   const { count, increment, decrement, setCount } = useCounter(1);
 
   const handleChange = ({ target: { value } }) => {
-    if (value < initialValue) {
+    if (value < initialValue || typeof value === "string") {
       return setCount(initialValue);
     }
     setCount(+value);
